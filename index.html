@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> SuperMario Unit-4 Game </title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+
+</head>
+<body>
+<div class="header">
+    <div class="row">
+            <div class="col-md-5" >
+                <div class="mario">
+                    <img src="/users/mike/hangman/assets/images/mario.png" height=100% width=100%>
+                </div>
+            </div>
+            <div class="col-md-2">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Mario_Series_Logo.svg/1200px-Mario_Series_Logo.svg.png" height=100% width=100%>
+            </div>
+            <div class="col-md-5">
+                <div class="luigi">
+                    <img src="https://orig00.deviantart.net/98b3/f/2017/195/b/6/luigi_png_by_jeffersonfan99-dbgb54h.png" height=100% width=30%>
+                </div>
+            </div>
+    </div>
+</div>
+<div class="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="rowOne">
+                                <div class="mario2">
+                                        <img src="/users/mike/hangman/assets/images/mario.png" height=150px width=auto id="mario2">
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                            <div class="rowOne">
+                                    <div class=luigi2>
+                                        <img src="https://orig00.deviantart.net/98b3/f/2017/195/b/6/luigi_png_by_jeffersonfan99-dbgb54h.png" height=150px width="auto">   
+                                    </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                            <div class="rowOne">
+                                <div class="toad">
+                                    <img src="/users/mike/hangman/assets/images/toad.png" height=150px width=auto>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                            <div class="rowOne">
+                                <div class="princesspeach">
+                                    <img src="/users/mike/hangman/assets/images/princesspeach.png" height=150px width="auto">
+                                </div>
+                            </div>
+                    </div>       
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="fighter"></div>
+                        <div class="instructionscontainer" id="instructionsContainer">
+                            <div class="instructions">
+                            <p>"One day, the kingdom of the peaceful Mushroom Kingdom people was invaded by
+                                the Koopa, a tribe of turtles famous for their black magic. The quiet
+                                Mushroom People were turned into stones, bricks, or plants 
+                                and the Mushroom Kingdom fell into ruin.
+                            </p> 
+                            <p>
+                                The only one who can undo the magic spell on the Mushroom People and return
+                                them to their normal selves is YOU! 
+                            </p>
+                            <p>
+                                Choose your character and embark upon a journey full of peril and despair.  It
+                                is likely you will never return but you are the only hope.
+                            </p>
+                                Good luck...you will need it!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="col-12">
+                            <div class="fighterInfo">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>HP: <span id="hp"></span></p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>HP: <span id="enemyHp"> </span></p>
+                                    </div>
+                                </div>
+                                <button id="attack">Attack!</button> 
+                            </div>
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="fighterInfo">
+                            You hurt your enemy by x hp, they countered! You're down x hp
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="row">
+                        <div class="col-12">
+                            <div class="wario">
+                                <img src="/users/mike/hangman/assets/images/wario.gif" height=150px width="auto" id="wario">
+                            </div>
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="bowser" id="bowser">
+                            <img src="/users/mike/hangman/assets/images/bowser.png" height=150px width="auto"> 
+                        </div>  
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="evilKoopa1">
+                            <img src="/users/mike/hangman/assets/images/evilkoopa1.png" height=150px width="auto" id="evilKoopa1"> 
+                        </div>  
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="evilkoopa2">
+                            <img src="/users/mike/hangman/assets/images/evilkoopa2.png" height=150px width="auto"id="evilKoopa2">
+                    </div>
+                </div>
+            </div>  
+    </div> 
+       
+</div>   
+
+
+
+
+
+<script src ="./assets/javascript/game.js"></script>   
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+.header {
+    background-image: url('/users/mike/hangman/assets/images/background.png');
+    overflow: hidden;
+    border-bottom: 1px solid black;
+    
+    
+    
+}
+.mario {
+    height: 100%;
+    padding-left: 80%;
+    overflow: hidden;
+    
+    
+}
+.mario2 {
+
+  padding-right:15%;
+  transform: translate(2000px);
+  animation: three 2s 1 forwards;
+  height:100%;
+  animation-delay: 30s;
+  
+  
+}
+.toad {
+  height: 50%;
+  transform: translate(-1000px);
+  animation: four 3s 1 forwards;
+  animation-delay: 30s;
+}
+
+.princesspeach {
+  height:70%;
+  animation-delay:1s;
+  animation: five 30s 1 forwards;
+  
+  
+}
+
+@keyframes three {
+    0% {
+      transform: rotateZ(0deg);
+    }
+    100% {
+      transform: rotateZ(360deg);
+    }
+  }
+
+  @keyframes four {
+    0% {transform: translate(-1000px)}
+    80% {
+      transform: rotatey(10deg);
+    }
+    100% {
+      transform: rotatey(360deg);
+      transform: translate(-20px,0);
+    }
+  }
+
+  @keyframes five {
+    0%    {opacity: 0;}
+    95%   {transform: skew(100deg,10deg);
+      transform: translate(-1000px);
+    opacity:0}
+    100%  {transform: skew(0deg,0deg);}
+  }
+
+.luigi {
+    height:100%;
+    overflow: hidden;
+    
+  
+}
+
+.luigi2 {
+  transform: translate(2000px);
+  animation: shimmy 3s 1 forwards;
+  animation-delay: 30s;
+  height:15%;
+  
+}
+ 
+   
+@keyframes shimmy {
+    50% {
+      transform: translate(-100px, 0);    
+    }
+    100% {
+      transform: translate(-50px, 0px);
+    }
+  }
+
+body {
+    background-image: url('/users/mike/hangman/assets/images/background.png');
+}
+.rowOne {
+  display:inherit;
+  padding:0px;
+  margin-left:0px;
+  padding-left:0px;
+}
+.instructionscontainer {
+  color:white;
+  margin-left:10%;
+  margin-right:10%;
+  background-image: url('/users/mike/hangman/assets/images/contentbackground.png');
+  background-size:50%;
+  overflow-x: hidden;
+  text-align: center;
+  animation: scrollingdown 30s 1 forwards;
+  border-radius:50%;
+  margin-top:0%;
+  
+
+  
+}
+@keyframes scrollingdown {
+  0% {
+    transform: translatey(0rem);    
+  }
+  95% {
+    opacity:100;
+  }
+  100% {
+    transform: translatey(-10rem);
+    opacity:0;
+  }
+}
+.instructions {
+overflow: hidden;
+margin-left:15%;
+margin-right:15%;
+ /* Starting position */
+ -moz-transform:translateY(100%);
+ -webkit-transform:translateY(100%);	
+ transform:translateY(100%);
+ /* Apply animation to this element */	
+ -moz-animation: scroll-up 38s linear infinite;
+ -webkit-animation: scroll-up 38s linear infinite;
+ animation: scroll-up 38s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-up {
+ 0%   { -moz-transform: translateY(100%); }
+ 100% { -moz-transform: translateY(-100%); }
+}
+@-webkit-keyframes scroll-up {
+ 0%   { -webkit-transform: translateY(100%); }
+ 100% { -webkit-transform: translateY(-100%); }
+}
+@keyframes scroll-up {
+ 0%   { 
+ -moz-transform: translateY(100%); /* Browser bug fix */
+ -webkit-transform: translateY(100%); /* Browser bug fix */
+ transform: translateY(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateY(-100%); /* Browser bug fix */
+ -webkit-transform: translateY(-100%); /* Browser bug fix */
+ transform: translateY(-100%); 
+ }
+}
+
+.fighter {
+  align-content: center;
+  margin-top:25%;
+  margin-left: 5%;
+  padding:20px; 
+}
+.fighterInfo {
+  background-image: url('/users/mike/hangman/assets/images/contentbackground.png');
+  text-align: center;
+  visibility: hidden;
+  color: white;
+}
